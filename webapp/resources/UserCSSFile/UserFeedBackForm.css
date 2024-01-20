@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: poppins;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main
+{
+    margin-top: 98px;
+}
+
+.main .container {
+    padding: 16px ;
+    background-color: black;
+    box-shadow: 5px 0 30px 20px red;
+}
+.main .container h1
+{
+    text-align: center;
+    font-size: 25px;
+    color: hsl(193, 90%, 44%);
+}
+
+
+.main .container .showmsg
+{
+    color: red;
+}
+
+.main .container label
+{
+    font-size: 15px;
+    color: hsl(193, 90%, 44%);
+}
+
+.main .container .validation
+{
+    margin: 1px 0 22px 0;
+    color: red;
+}
+
+/* Full-width input fields  */
+.main input[type=text],
+.main input[type=password],
+.main textarea
+{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 2px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    border-radius: 25px;
+    border: 4px solid dodgerblue;
+}
+
+.main input[type=text]:focus,
+.main input[type=password]:focus,
+.main textarea:focus
+{
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+.main hr {
+    border: 1px solid darkblue;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.main .registerbtn {
+    color: darkblue;
+    padding: 16px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    background-color: rgb(227, 65, 138);
+    font-size: 20px;
+    border-radius: 25px;
+    border: 4px solid dodgerblue;
+
+}
+
+.main .registerbtn:hover {
+    opacity: 3;
+}
+

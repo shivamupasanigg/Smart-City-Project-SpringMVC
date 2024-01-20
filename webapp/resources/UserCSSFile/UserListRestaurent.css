@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 98px;
+}
+
+.container {
+  padding: 16px;
+  background-color: black;
+}
+
+.main .container h1 {
+  text-align: center;
+  color: dodgerblue;
+}
+
+.main .container hr {
+  border: 1px solid darkblue;
+  margin-bottom: 25px;
+}
+
+.main .container .table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: black;
+  box-shadow: 0 0 10px dodgerblue;
+}
+
+.main .container .table th,
+.main .container .table td {
+  padding: 15px;
+  text-align: center;
+  color: dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
+
+.main .container td .button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+  .main .container td .button2 
+  {
+  	background-color: hsl(193, 90%, 44%);
+	  opacity: 0.4;
+	  height:50px;
+  }
+
+@media only screen and (min-width: 600px) {
+  .main .container .table {
+    float: left;
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+}

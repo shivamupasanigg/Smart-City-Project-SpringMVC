@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: poppins;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main
+{
+    margin-top: 98px;
+}
+.main .container {
+    padding: 92px;
+    background-color: black;
+    box-shadow: 5px 0 30px 20px red;
+}
+
+.main .container .card
+{
+    display: flex;
+
+}
+
+.main .container .card {
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    margin-left: 10rem;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+
+}
+
+.main .container .card::before,
+.main .container .card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.main .container .card::after {
+    border-radius: 50%;
+}
+.main .container .card::before {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    top: -.7rem;
+    left: -.7rem;
+}
+
+.main .container .card .infos {
+    margin-left: 1.5rem;
+}
+
+.main .container .card .name {
+    margin-bottom: 1rem;
+}
+
+.main .container .card .name h1
+{
+    color: hsl(240, 90%, 44%);
+}
+.main .container .card .name h2 {
+    color: hsl(240, 90%, 44%);
+    font-size: 1.3rem;
+}
+
+.main .container .card .name h4 {
+    font-size: .8rem;
+    color: #333
+}
+
+.main .container .card .links a {
+    font-family: 'Poppins', sans-serif;
+    min-width: 120px;
+    padding: .5rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .25s linear;
+    text-decoration: none;
+}
+
+.main .container .card .links .follow{
+    background-color: #222;
+    color: #fff;
+}
+
+.main .container .card .links .follow:hover {
+    background-color: red;
+    color: #222;
+}
+
+@media screen and (max-width: 450px) {
+
+    .main .container
+    {
+        padding: 0;
+    }
+    .main .container .card {
+        display: block;
+        margin-left: 0;
+    }
+
+    .main .container .card .infos {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .main .container .card .links button {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 527px) {
+    .main .container {
+        padding: 0;
+    }
+
+    .main .container .card {
+      margin: 10px;
+        max-width: 100%;
+    }
+
+    .main .container .card .infos {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .main .container .card .links a {
+        min-width: 100px;
+    }
+}
+@media screen and (max-width: 1044px) {
+    .main .container {
+        padding: 0;
+    }
+
+    .main .container .card {
+      margin: 10px;
+        max-width: 100%;
+    }
+
+    .main .container .card .infos {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .main .container .card .links a {
+        min-width: 100px;
+    }
+}

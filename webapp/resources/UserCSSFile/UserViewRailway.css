@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: poppins;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
+    box-sizing: border-box;
+}
+
+.Main {
+    margin-top: 98px;
+}
+
+/* Styles for the outer div with class 'main' */
+.main {
+    /* padding: 40px; */
+    background-color: black;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+/* Styles for the 'box-show' class */
+.box-show {
+    box-shadow: 5px 0 30px 20px red;
+}
+
+/* Styles for the image slider container */
+
+.swiper {
+    width: 70%;
+    height: 60%;
+}
+
+.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    max-width: 1100px;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    color: dodgerblue;
+}
+
+.heading {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    color: brown;
+}
+
+/* Style for specific elements */
+.line {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.label {
+    color: blue;
+    /* Change the color to your preferred color */
+    margin-right: 5px;
+}
+
+.value {
+    color: green;
+    /* Change the color to your preferred color */
+}
+
+h1 {
+    color: dodgerblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    color: dodgerblue;
+}
+
+/* Styles for the Google Map div */
+.google-map {
+    position: relative;
+    padding-bottom: 75%;
+    /* Maintain a 4:3 aspect ratio for the map */
+    overflow: hidden;
+    height: 0;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    border: 2px solid rgb(82, 230, 52);
+    /* Set your desired border color */
+    margin: 10px 0;
+}
+
+/* Apply responsive styling using media queries */
+@media screen and (max-width: 600px) {
+
+    /* Adjust styles for smaller screens */
+    .main {
+        padding: 5px;
+    }
+
+    .line {
+        flex-direction: column;
+    }
+
+    .label {
+        margin-bottom: 5px;
+    }
+        table {
+            max-width: 100%;
+        }
+    }
