@@ -1,1 +1,1 @@
-
+images directly store in database.
