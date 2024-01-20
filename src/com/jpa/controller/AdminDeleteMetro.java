@@ -1,0 +1,24 @@
+package com.jpa.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.jpa.dao.AdminMetroDaoImpl;
+
+@Controller
+public class AdminDeleteMetro {
+	
+	@Autowired
+	private AdminMetroDaoImpl deletemetro;
+	
+	@GetMapping("/DeleteMetro")
+	public String deletemetro(Model m,@RequestParam int id)
+	{
+		deletemetro.delete(id);
+		return "redirect:/ListMetro";
+	}
+
+}
